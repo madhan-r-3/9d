@@ -1,0 +1,31 @@
+INP1SET он
+
+INP2.SET IH
+
+OUTSET 2H
+
+mmregs
+
+text
+
+START:
+
+LD #140H,DP
+
+RSBX CPL
+
+NOP
+
+NOP
+
+NOP
+
+NOP
+
+LD INP1,A
+
+SUB INP2,A
+
+STL A,OUT
+
+HLT: BHLT
